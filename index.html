@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | models-kyuu-iroha-project</title>
+    <title>GDSxNF Collab</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">models-kyuu-iroha-project</div>
+        <div id="unity-build-title">GDSxNF Collab</div>
       </div>
     </div>
     <script>
@@ -52,15 +52,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Test_BeachWater2.loader.js";
+      var loaderUrl = buildUrl + "/Test_WithInput.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Test_BeachWater2.data.unityweb",
-        frameworkUrl: buildUrl + "/Test_BeachWater2.framework.js.unityweb",
-        codeUrl: buildUrl + "/Test_BeachWater2.wasm.unityweb",
+        dataUrl: buildUrl + "/Test_WithInput.data.unityweb",
+        frameworkUrl: buildUrl + "/Test_WithInput.framework.js.unityweb",
+        codeUrl: buildUrl + "/Test_WithInput.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "models-kyuu-iroha-project",
+        companyName: "Neun Farben Corporation",
+        productName: "GDSxNF Collab",
         productVersion: "0.1.0",
         showBanner: unityShowBanner,
         // errorHandler: function(err, url, line) {
@@ -99,7 +99,7 @@
 
         // To lower canvas resolution on mobile devices to gain some
         // performance, uncomment the following line:
-        // config.devicePixelRatio = 1;
+        config.devicePixelRatio = 1;
 
 
       } else {
