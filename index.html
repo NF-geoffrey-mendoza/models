@@ -52,12 +52,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Test_WithInput3.loader.js";
+      var loaderUrl = buildUrl + "/Test_Quality.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Test_WithInput3.data.unityweb",
-        frameworkUrl: buildUrl + "/Test_WithInput3.framework.js.unityweb",
-        codeUrl: buildUrl + "/Test_WithInput3.wasm.unityweb",
+        dataUrl: buildUrl + "/Test_Quality.data.unityweb",
+        frameworkUrl: buildUrl + "/Test_Quality.framework.js.unityweb",
+        codeUrl: buildUrl + "/Test_Quality.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Neun Farben Corporation",
         productName: "GDSxNF Collab",
@@ -99,8 +99,8 @@
 
         // To lower canvas resolution on mobile devices to gain some
         // performance, uncomment the following line:
-        config.devicePixelRatio = 1;
-
+        // config.devicePixelRatio = 1;
+        config.devicePixelRatio = Math.min(2, window.devicePixelRatio || 1);
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
